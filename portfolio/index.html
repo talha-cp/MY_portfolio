@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Talha - Web Developer</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/mobile.css" media="screen and (max-width: 768px)">
+    </head>
+
+    <body>
+        <!-- Skip Link for Accessibility -->
+        <a href="#home" class="skip-link">Skip to main content</a>
+
+        <!--===== HEADER =====-->
+        <header class="l-header">
+            <nav class="nav bd-grid">
+                <div>
+                    <a href="#home" class="nav__logo">Talha</a>
+                </div>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
+                        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                        <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+                        <li class="nav__item"><a href="#education" class="nav__link">Education</a></li>
+                        <li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
+                        <li class="nav__item"><a href="#roadmap" class="nav__link">Roadmap</a></li>
+                        <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="nav__actions">
+                    <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                    <div class="nav__toggle" id="nav-toggle">
+                        <i class="fas fa-bars"></i>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <main class="l-main">
+            <!--===== HOME =====-->
+            <section class="home bd-grid" id="home">
+                <div class="home__data">
+                    <h1 class="home__title">Hi there — <br>I'm <span class="home__title-color">Talha</span></h1>
+                    <h2 class="home__subtitle">Web Developer</h2>
+                    <p class="home__description">I build responsive web experiences with HTML, CSS & JavaScript.</p>
+
+                    <div class="home__social">
+                        <a href="#" class="home__social-icon" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="home__social-icon" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="#" class="home__social-icon" aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="home__social-icon" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+
+                    <div class="home__buttons">
+                        <a href="#" class="button button-primary">Download CV</a>
+                        <a href="#contact" class="button button-secondary">Contact Me</a>
+                    </div>
+                </div>
+
+                <div class="home__img">
+                    <div class="home__blob">
+                        <img src="assets/img/talha.jpg" alt="Talha portrait" class="home__blob-img">
+                    </div>
+                </div>
+            </section>
+
+            <!--===== ABOUT =====-->
+            <section class="about section" id="about">
+                <div class="container">
+                    <h2 class="section-title">About</h2>
+
+                    <div class="about__container bd-grid">
+                        <div class="about__img">
+                            <img src="assets/img/talha.jpg" alt="Talha portrait">
+                        </div>
+
+                        <div class="about__content">
+                            <h2 class="about__subtitle">I'm Talha</h2>
+                            <p class="about__text">I'm a web developer who enjoys building accessible and performant web
+                                apps. Skilled in front-end development and comfortable with backend basics.</p>
+                            <p class="about__text">When I'm not coding, you can find me exploring new technologies,
+                                contributing to open-source projects, or sharing knowledge with the developer community.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--===== SKILLS =====-->
+            <section class="skills section" id="skills">
+                <div class="container">
+                    <h2 class="section-title">Skills</h2>
+
+                    <div class="skills__container">
+                        <div class="skills-tabs">
+                            <button class="tab-btn active" data-tab="languages">Languages</button>
+                            <button class="tab-btn" data-tab="tools">Tools</button>
+                        </div>
+
+                        <div class="skills-content">
+                            <div class="skill-category">
+                                <h3 class="skill-category-title">Technical Skills</h3>
+
+                                <div class="skills__data">
+                                    <div class="skills__names">
+                                        <i class="fab fa-html5 skills__icon"></i>
+                                        <span class="skills__name">HTML5</span>
+                                    </div>
+                                    <div class="skills__percentage">90%</div>
+                                    <div class="skills__bar" data-skill="html"></div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <div class="skills__names">
+                                        <i class="fab fa-css3-alt skills__icon"></i>
+                                        <span class="skills__name">CSS3</span>
+                                    </div>
+                                    <div class="skills__percentage">85%</div>
+                                    <div class="skills__bar" data-skill="css"></div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <div class="skills__names">
+                                        <i class="fab fa-js-square skills__icon"></i>
+                                        <span class="skills__name">JavaScript</span>
+                                    </div>
+                                    <div class="skills__percentage">80%</div>
+                                    <div class="skills__bar" data-skill="js"></div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <div class="skills__names">
+                                        <i class="fab fa-python skills__icon"></i>
+                                        <span class="skills__name">Python</span>
+                                    </div>
+                                    <div class="skills__percentage">75%</div>
+                                    <div class="skills__bar" data-skill="python"></div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <div class="skills__names">
+                                        <i class="fas fa-database skills__icon"></i>
+                                        <span class="skills__name">MySQL</span>
+                                    </div>
+                                    <div class="skills__percentage">70%</div>
+                                    <div class="skills__bar" data-skill="mysql"></div>
+                                </div>
+                            </div>
+
+                            <div class="skill-category">
+                                <h3 class="skill-category-title">Tools & Software</h3>
+                                <div class="skill-tags">
+                                    <div class="skill-tag">
+                                        <i class="fab fa-github"></i>
+                                        <span>GitHub</span>
+                                    </div>
+                                    <div class="skill-tag">
+                                        <i class="fab fa-figma"></i>
+                                        <span>Figma</span>
+                                    </div>
+                                    <div class="skill-tag">
+                                        <i class="fas fa-file-excel"></i>
+                                        <span>Microsoft Office</span>
+                                    </div>
+                                    <div class="skill-tag">
+                                        <i class="fab fa-cuttlefish"></i>
+                                        <span>C</span>
+                                    </div>
+                                    <div class="skill-tag">
+                                        <i class="fab fa-cuttlefish"></i>
+                                        <span>C++</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--===== EDUCATION =====-->
+            <section class="education section" id="education">
+                <div class="container">
+                    <h2 class="section-title">Education</h2>
+
+                    <div class="education__container">
+                        <div class="education-timeline">
+                            <div class="education-item">
+                                <div class="education-card">
+                                    <div class="education-year">2021 - 2025</div>
+                                    <h3 class="education-degree">Bachelor of Computer Science</h3>
+                                    <div class="education-institution">Islamiah collage - vaniyambadi</div>
+                                    <ul class="education-highlights">
+                                        <li>Graduated with Honors (GPA: 7.5/10.0)</li>
+                                        <li>learned how coding world works in collage</li>
+                                        <li>i learned what is python, java, c, c++</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="education-item">
+                                <div class="education-card">
+                                    <div class="education-year">2018 - 2020</div>
+                                    <h3 class="education-degree">Islamiah Boys Higher secondery school</h3>
+                                    <div class="education-institution">Vaniyambadi </div>
+                                    <ul class="education-highlights">
+                                        <li>Focus on Mathematics and Computer Science</li>
+                                        <li>Developed first web projects during this period</li>
+                                        <li>Participated in science fairs and programming clubs</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--===== PROJECTS =====-->
+            <section class="projects section" id="projects">
+                <div class="container">
+                    <h2 class="section-title">Projects</h2>
+
+                    <div class="projects__container">
+                        <div class="projects__grid">
+                            <!-- Project 1 -->
+                            <div class="project-card">
+                                <img src="assets/img/work1.jpg" alt="E-commerce website" class="project-img">
+                                <div class="project-content">
+                                    <h3 class="project-title">E-commerce Platform</h3>
+                                    <p class="project-description">A fully responsive e-commerce website with product
+                                        catalog, cart, and checkout functionality.</p>
+                                    <div class="project-tags">
+                                        <span class="project-tag">HTML</span>
+                                        <span class="project-tag">CSS</span>
+                                        <span class="project-tag">JavaScript</span>
+                                    </div>
+                                    <div class="project-links">
+                                        <a href="#" class="project-link">
+                                            <i class="fas fa-external-link-alt"></i>
+                                            <span>Live</span>
+                                        </a>
+                                        <a href="#" class="project-link">
+                                            <i class="fab fa-github"></i>
+                                            <span>Code</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Project 2 -->
+                            <div class="project-card">
+                                <img src="assets/img/work2.jpg" alt="Weather application" class="project-img">
+                                <div class="project-content">
+                                    <h3 class="project-title">Weather App</h3>
+                                    <p class="project-description">A clean weather application that displays current
+                                        conditions and forecasts for any location.</p>
+                                    <div class="project-tags">
+                                        <span class="project-tag">HTML</span>
+                                        <span class="project-tag">CSS</span>
+                                        <span class="project-tag">JavaScript</span>
+                                        <span class="project-tag">API</span>
+                                    </div>
+                                    <div class="project-links">
+                                        <a href="#" class="project-link">
+                                            <i class="fas fa-external-link-alt"></i>
+                                            <span>Live</span>
+                                        </a>
+                                        <a href="#" class="project-link">
+                                            <i class="fab fa-github"></i>
+                                            <span>Code</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Project 3 -->
+                            <div class="project-card">
+                                <img src="assets/img/work3.jpg" alt="Task management app" class="project-img">
+                                <div class="project-content">
+                                    <h3 class="project-title">Task Manager</h3>
+                                    <p class="project-description">A productivity application for managing daily tasks
+                                        with drag-and-drop functionality.</p>
+                                    <div class="project-tags">
+                                        <span class="project-tag">HTML</span>
+                                        <span class="project-tag">CSS</span>
+                                        <span class="project-tag">JavaScript</span>
+                                    </div>
+                                    <div class="project-links">
+                                        <a href="#" class="project-link">
+                                            <i class="fas fa-external-link-alt"></i>
+                                            <span>Live</span>
+                                        </a>
+                                        <a href="#" class="project-link">
+                                            <i class="fab fa-github"></i>
+                                            <span>Code</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--===== ROADMAP =====-->
+            <section class="roadmap section" id="roadmap">
+                <div class="container">
+                    <h2 class="section-title">Roadmap</h2>
+
+                    <div class="roadmap__container">
+                        <div class="roadmap-timeline">
+                            <div class="roadmap-item">
+                                <div class="roadmap-date">2024</div>
+                                <div class="roadmap-content">
+                                    <div class="roadmap-card">
+                                        <h3 class="roadmap-title">Learn React & Node.js</h3>
+                                        <p class="roadmap-description">Expand my skillset by mastering popular
+                                            frameworks for frontend and backend development.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="roadmap-item">
+                                <div class="roadmap-date">2024</div>
+                                <div class="roadmap-content">
+                                    <div class="roadmap-card">
+                                        <h3 class="roadmap-title">Build Full-Stack Applications</h3>
+                                        <p class="roadmap-description">Create complete web applications with database
+                                            integration and user authentication.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="roadmap-item">
+                                <div class="roadmap-date">2025</div>
+                                <div class="roadmap-content">
+                                    <div class="roadmap-card">
+                                        <h3 class="roadmap-title">Explore Mobile Development</h3>
+                                        <p class="roadmap-description">Learn React Native or Flutter to build
+                                            cross-platform mobile applications.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="roadmap-item">
+                                <div class="roadmap-date">2025</div>
+                                <div class="roadmap-content">
+                                    <div class="roadmap-card">
+                                        <h3 class="roadmap-title">Contribute to Open Source</h3>
+                                        <p class="roadmap-description">Start contributing to open-source projects and
+                                            build a strong developer portfolio.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--===== CONTACT =====-->
+            <section class="contact section" id="contact">
+                <div class="container">
+                    <h2 class="section-title">Contact</h2>
+
+                    <div class="contact__container">
+                        <form class="contact__form" id="contact-form">
+                            <div class="form-group">
+                                <input type="text" placeholder="Name" class="contact__input" id="name" required>
+                                <div class="error-message" id="name-error">Please enter your name</div>
+                            </div>
+
+                            <div class="form-group">
+                                <input type="email" placeholder="Email" class="contact__input" id="email" required>
+                                <div class="error-message" id="email-error">Please enter a valid email address</div>
+                            </div>
+
+                            <div class="form-group">
+                                <input type="tel" placeholder="Phone" class="contact__input" id="phone">
+                                <div class="error-message" id="phone-error">Please enter a valid phone number</div>
+                            </div>
+
+                            <div class="form-group">
+                                <textarea id="message" cols="0" rows="10" placeholder="Message" class="contact__input"
+                                    required></textarea>
+                                <div class="error-message" id="message-error">Please enter your message</div>
+                            </div>
+
+                            <button type="submit" class="contact__button button">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!--===== FOOTER =====-->
+        <footer class="footer">
+            <div class="container">
+                <p class="footer__title">Talha</p>
+                <div class="footer__social">
+                    <a href="#" class="footer__icon" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="#" class="footer__icon" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="#" class="footer__icon" aria-label="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="footer__icon" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+                <p class="footer__copy">&#169; <span id="current-year">2024</span> Talha. All rights reserved</p>
+            </div>
+        </footer>
+
+        <!-- Back to Top Button -->
+        <a href="#home" class="back-to-top" aria-label="Back to top">
+            <i class="fas fa-arrow-up"></i>
+        </a>
+
+        <!-- Toast Notification -->
+        <div class="toast" id="toast">
+            <i class="fas fa-check-circle toast-icon"></i>
+            <span class="toast-message">Thanks! Your message has been received. I'll get back to you soon.</span>
+        </div>
+
+        <script src="js/script.js"></script>
+    </body>
+
+</html>

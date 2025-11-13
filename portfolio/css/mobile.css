@@ -1,0 +1,329 @@
+/* Mobile Styles - For screens up to 768px */
+@media screen and (max-width: 768px) {
+
+    /* Base Mobile Adjustments */
+    .container {
+        padding: 0 var(--mb-1);
+    }
+
+    .section {
+        padding: 3rem 0 1rem;
+    }
+
+    .section-title {
+        font-size: 1.5rem;
+        margin-bottom: var(--mb-4);
+    }
+
+    .section-title::after {
+        top: 2.5rem;
+    }
+
+    /* Mobile Navigation */
+    .nav {
+        padding: 0 var(--mb-1);
+    }
+
+    .nav__menu {
+        position: fixed;
+        top: var(--header-height);
+        right: -100%;
+        width: 80%;
+        height: 100vh;
+        padding: var(--mb-4);
+        background-color: var(--card-color);
+        transition: 0.5s;
+        box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+        z-index: var(--z-fixed);
+        overflow-y: auto;
+    }
+
+    .nav__list {
+        flex-direction: column;
+        gap: var(--mb-3);
+    }
+
+    .nav__link {
+        padding: 0.75rem 0;
+        font-size: 1.1rem;
+    }
+
+    .nav__toggle {
+        display: block;
+    }
+
+    .nav__actions {
+        gap: var(--mb-1);
+    }
+
+    .show {
+        right: 0;
+    }
+
+    /* Mobile Home Section */
+    .home {
+        padding: 5rem 0 2rem;
+        min-height: auto;
+    }
+
+    .home__container {
+        grid-template-columns: 1fr;
+        gap: var(--mb-4);
+        text-align: center;
+    }
+
+    .home__title {
+        font-size: 2.2rem;
+        margin-bottom: var(--mb-1);
+    }
+
+    .home__subtitle {
+        font-size: 1.3rem;
+        margin-bottom: var(--mb-1);
+    }
+
+    .home__description {
+        font-size: 1rem;
+        margin-bottom: var(--mb-3);
+    }
+
+    .home__social {
+        justify-content: center;
+        margin-bottom: var(--mb-3);
+    }
+
+    .home__social-icon {
+        width: 40px;
+        height: 40px;
+        font-size: 1.1rem;
+    }
+
+    .home__buttons {
+        justify-content: center;
+        gap: var(--mb-1);
+    }
+
+    .button {
+        padding: 0.75rem 1.5rem;
+        font-size: 0.9rem;
+    }
+
+    .home__blob {
+        width: 280px;
+        height: 280px;
+        margin: 0 auto;
+    }
+
+    .home__blob-img {
+        width: 260px;
+        height: 260px;
+    }
+
+    /* Mobile About Section */
+    .about__container {
+        grid-template-columns: 1fr;
+        gap: var(--mb-4);
+        text-align: center;
+    }
+
+    .about__img img {
+        width: 250px;
+    }
+
+    .about__subtitle {
+        font-size: 1.3rem;
+    }
+
+    /* Mobile Skills Section */
+    .skills-tabs {
+        flex-wrap: wrap;
+        gap: var(--mb-1);
+    }
+
+    .tab-btn {
+        padding: 0.6rem 1.5rem;
+        font-size: 0.9rem;
+    }
+
+    .skills-content {
+        grid-template-columns: 1fr;
+        gap: var(--mb-4);
+    }
+
+    .skills__data {
+        padding: 0.875rem 1.25rem;
+        margin-bottom: var(--mb-2);
+    }
+
+    .skills__icon {
+        font-size: 1.5rem;
+    }
+
+    .skill-tags {
+        justify-content: center;
+    }
+
+    .skill-tag {
+        padding: 0.6rem 1.2rem;
+        font-size: 0.9rem;
+    }
+
+    /* Mobile Education Section */
+    .education-timeline::before {
+        left: 20px;
+    }
+
+    .education-item {
+        padding-left: 60px;
+    }
+
+    .education-item::before {
+        left: 10px;
+        width: 20px;
+        height: 20px;
+    }
+
+    .education-card {
+        padding: var(--mb-3);
+    }
+
+    .education-degree {
+        font-size: 1.1rem;
+    }
+
+    /* Mobile Projects Section */
+    .projects__grid {
+        grid-template-columns: 1fr;
+        gap: var(--mb-3);
+    }
+
+    .project-card {
+        margin-bottom: var(--mb-2);
+    }
+
+    .project-content {
+        padding: var(--mb-2);
+    }
+
+    .project-links {
+        flex-direction: column;
+        gap: var(--mb-1);
+    }
+
+    .project-link {
+        padding: 0.6rem 1rem;
+    }
+
+    /* Mobile Roadmap Section */
+    .roadmap-item {
+        flex-direction: column;
+        margin-bottom: var(--mb-4);
+    }
+
+    .roadmap-date {
+        text-align: left;
+        padding-right: 0;
+        margin-bottom: var(--mb-1);
+        flex: none;
+    }
+
+    .roadmap-content {
+        padding-left: 0;
+    }
+
+    .roadmap-content::before {
+        display: none;
+    }
+
+    .roadmap-item:not(:last-child) .roadmap-content::after {
+        display: none;
+    }
+
+    .roadmap-card {
+        padding: var(--mb-3);
+    }
+
+    /* Mobile Contact Section */
+    .contact__form {
+        padding: var(--mb-3);
+    }
+
+    .contact__input {
+        padding: 0.875rem 1.25rem;
+    }
+
+    /* Mobile Footer */
+    .footer {
+        padding: 2rem 0 1.5rem;
+    }
+
+    .footer__social {
+        gap: var(--mb-2);
+    }
+
+    .footer__icon {
+        font-size: 1.3rem;
+    }
+
+    /* Mobile Back to Top */
+    .back-to-top {
+        bottom: 20px;
+        right: 20px;
+        width: 45px;
+        height: 45px;
+    }
+
+    /* Mobile Toast */
+    .toast {
+        bottom: 20px;
+        padding: var(--mb-2) var(--mb-3);
+        width: 95%;
+    }
+}
+
+/* Small Mobile Devices - For screens up to 480px */
+@media screen and (max-width: 480px) {
+    .home__title {
+        font-size: 1.8rem;
+    }
+
+    .home__subtitle {
+        font-size: 1.1rem;
+    }
+
+    .home__blob {
+        width: 240px;
+        height: 240px;
+    }
+
+    .home__blob-img {
+        width: 220px;
+        height: 220px;
+    }
+
+    .section-title {
+        font-size: 1.3rem;
+    }
+
+    .skills__data {
+        padding: 0.75rem 1rem;
+    }
+
+    .skill-tag {
+        padding: 0.5rem 1rem;
+        font-size: 0.85rem;
+    }
+
+    .education-item {
+        padding-left: 50px;
+    }
+
+    .projects__grid {
+        grid-template-columns: 1fr;
+    }
+
+    .button {
+        padding: 0.6rem 1.2rem;
+        font-size: 0.85rem;
+    }
+}
